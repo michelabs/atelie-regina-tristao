@@ -1,0 +1,44 @@
+<header class="main-header">
+    <div class="nome">
+        <h1 class="main-header__title">
+            <span class="main-header__title--blueviolet">Ateliê</span>
+            <span class="main-header__title--blueviolett"> ReginaTristão</span>
+        </h1>
+    </div>
+    <div class="container-menu">
+        <nav class="main-header__menu">
+            <ul>
+                <li>
+                    <a routerLink="produtos">Produtos</a>
+                </li>
+                <li>
+                    <a routerLink="contato">Contato</a>
+                </li>
+                <li>
+                    <a routerLink="carrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Carrinho
+                        <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/reginatristaoatelie/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100004139401862">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/message/RQXVZ2MKFB6YL1">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <app-barra-pesquisa></app-barra-pesquisa>
+    </div>
+</header>
