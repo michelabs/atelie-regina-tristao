@@ -15,6 +15,10 @@ export class ProdutosComponent implements OnInit {
   constructor(private produtosService: ProdutosService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+
+    alert("Obs.: Esse projeto, foi construído baseado em uma pequena loja de propriedade de minha mãe. Caso tenha interesse pelos produtos, os contatos diretos estão presentes no site, e toda negociação poderá ser feita através destes contatos. Sendo assim, todas as condições apresentadas neste projeto são hipotéticas e não estão dentro de um contexto real de transação comercial.");
+
+    
     const produtos = this.produtosService.getAll(); 
 
     this.route.queryParamMap.subscribe(params => {
